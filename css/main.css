@@ -67,13 +67,11 @@ background-repeat: repeat-x;
 background-size:16%;
 margin-top:-20px;
 }
-
+/* carruserl */
 .centrar-texto-portada{
 bottom: 50%;
 top:40%;
 }
-
-
 
 #fondo {
 	text-align: center;
@@ -91,3 +89,4 @@ top:40%;
 	right: 0;
 	background-color: rgba(0,0,0,0.75);
 }
+/* fin carrusel  */
