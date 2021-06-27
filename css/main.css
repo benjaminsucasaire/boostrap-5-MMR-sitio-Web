@@ -1,0 +1,74 @@
+#ribbon{
+    background-color: rgba(8,149,224);
+    background-image:repeating-linear-gradient(-45deg,transparent,transparent 25px,rgba(0,86,140,0.5) 35px,rgba(0,86,140,0.5) 50px)
+}
+#ribbon::after{
+    content:'';
+    background-color: transparent;
+    display: block;
+    height:20px;
+    width: 50%;
+    margin: 0 auto;
+         /* ya que posicion relative hace que la caja sea independiendo y que no respete a las demas cajas */
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+#caja-sobre{
+    background-color: rgb(4, 117, 182);
+    /* con estas dos linea es posible que sobresalga  */
+     /* ya que posicion relative hace que la caja sea independiendo y que no respete a las demas cajas */
+    position: relative;
+    margin-top:-20px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#caja-sobre img{
+         /* ya que posicion relative hace que la caja sea independiendo y que no respete a las demas cajas  */
+         /* ojo que siempre dejara su espacio en donde estaba un vacio */
+    position: relative;
+    margin-top: -30px;
+}
+.text-shadow{
+    text-shadow: 0 3px 3px rgba(0,0,0,0.6);
+}
+
+#separador-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index:2;
+}
+#separador-ribbon .content{
+    width: 150%;
+    height:150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.car-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    /* para que se pueda desbordar */
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.car-border:hover{
+    transform: scale(1.05);
+}
+
+
+#servicios{
+background: rgb(255, 255, 255);
+background: url(../img/bg-04.png), linear-gradient(0deg, rgba(255, 255, 255, 1) 0%,rgba(8,149,224,1) 57%);
+/* el fondo solo se repita en el eje x */
+background-repeat: repeat-x;
+background-size:16%;
+margin-top:-20px;
+}
+
+.centrar-texto-portada{
+bottom: 50%;
+top:40%;
+}

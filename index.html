@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Sitio de bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- recien lo va crear  -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <!-- para que tenga fondo negro u oscuro bg-dark -->
+    <!-- navbar-expand-sm para que se expanda  -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark  " style="background-color:#00568C ;">
+        <!-- container-fluid para que tenga todo el ancho -->
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand " href="#"><img src="./img/logo-em.png" alt="Logo" class="me-2"
+                        style="width:70px;" /></a>
+                <a href="#" class="navbar-brand">INTEC MURCOMP</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toogle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-end text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <!-- class="nav-link" es para que tenga un estilo de enlace -->
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Registro</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- CARROUSEL -->
+    <div class="carousel slide" id="mainSlider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item ">
+                <img src="./img/portada06.png" alt="" class="d-block w-100" />
+            </div>
+            <div class="carousel-item active">
+                <img src="./img/portada02.png" alt="" class="d-block w-100" />
+            </div>
+            <div class="carousel-item ">
+                <img src="./img/portada07.png" alt="" class="d-block w-100" />
+            </div>
+        </div>
+    </div>
+    <!-- RIBBON  es un contenedor que va sobresalir de los demas-->
+    <!-- container-fluid para que tenga todo el ancho -->
+    <div id="ribbon" class="container-fluid">
+        <!--rounded-lg para que tenga border redondeados -->
+        <div id="caja-sobre" class="container w-50  rounded-lg">
+            <!-- row esto es una fila -->
+            <!-- align-items-center : para que centre el contendo -->
+            <div class="row align-items-center">
+                <!-- col-sm ≥576px max-width:540px -->
+                <div class="col-sm p3">
+                    <!-- w-75 el 75% de su tamaño asi sera responsivo -->
+                    <!-- mx-auto es el margin en las x osea horizontal mente auto maring: 0 auto; -->
+                    <img src="./img/svg/personaje.svg" class="d-block w-100  mx-auto" alt="personaje" />
+
+                </div>
+                <!-- text-light color de texto blanco -->
+                <div class="col-sm p3 text-light text-center">
+                    <p class="text-warning  h3">Innovación y Herramientas</p>
+                    <h4 class="text-shadow">Con Tecnología </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SEPARADOR RIBBON -->
+    <div id="separador-ribbon">
+        <div class="content bg-dark"></div>
+    </div>
+    <!-- SERVICIOS -->
+    <div id="servicios">
+        <div class="container-md p-5">
+            <div class="row pt-5">
+                <h3 class="text-center pb-5 pt-2 h1 fw-bolder text-light">Nuestros Servicios</h3>
+            </div>
+            <!-- text-center alineamos alcentro todos los textos -->
+            <div class="row text-center">
+                <div class="col-sm">
+                    <div class="card w-100 car-border mb-5">
+                        <img src="./img/card01.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class=" d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary ">Contactanos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card w-100 car-border mb-5">
+                        <img src="./img/card02.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class=" d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary ">Contactanos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card w-100 car-border mb-5">
+                        <img src="./img/card03.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class=" d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary ">Contactanos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- py-5 es para el padding arriba y abajo -->
+            <div class="row py-5">
+                <div class="col">
+                    <h3 class="text-center">More Games On Nintendo.com</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2"><a href="#">Nintengo</a></div>
+                <div class="col-2"><a href="#">Nintengo 3D</a></div>
+                <div class="col-1"><a href="#">wiiv u</a></div>
+                <div class="col-1"><a href="#">bobil</a></div>
+                <div class="col-1"><a href="#">retro</a></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- SEPARADOR AMIIBOS -->
+    <!-- AMIIBOS -->
+    <!-- PLAY NINTENDO -->
+    <!-- FOOTER -->
+    <!-- script para las animaciones     -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- end script -->
+</body>
+
+</html>
