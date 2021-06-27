@@ -15,7 +15,7 @@
     <!-- NAVBAR -->
     <!-- para que tenga fondo negro u oscuro bg-dark -->
     <!-- navbar-expand-sm para que se expanda  -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark  " style="background-color:#00568C ;">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark  " style="background-color:#00568C ;">
         <!-- container-fluid para que tenga todo el ancho -->
         <div class="container-fluid">
             <div>
@@ -29,13 +29,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-lg-flex justify-content-end text-center" id="navbarSupportedContent">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-4">
                     <!-- class="nav-link" es para que tenga un estilo de enlace -->
                     <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Registro</a></li>
                 </ul>
             </div>
 
@@ -43,19 +42,39 @@
     </nav>
 
     <!-- CARROUSEL -->
-    <div class="carousel slide" id="mainSlider" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item ">
-                <img src="./img/portada06.png" alt="" class="d-block w-100" />
+          <div class="carousel-item active " id="fondo" data-bs-interval="2000">
+            <img src="./img/portada01.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption centrar-texto-portada text-light d-none d-md-block ">
+              <h3>algo para que el cliente le llame?</h3>
+              <p>Descripcion breve del  1 Some representative placeholder content for the first slide.</p>
             </div>
-            <div class="carousel-item active">
-                <img src="./img/portada02.png" alt="" class="d-block w-100" />
+          </div>
+          <div class="carousel-item" id="fondo" data-bs-interval="2000">
+            <img src="./img/portada02.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption centrar-texto-portada text-light  d-none d-md-block ">
+              <h3>titulo del tema 2</h3>
+              <p>Descripcion breve  2 Some representative placeholder content for the first slide.</p>
             </div>
-            <div class="carousel-item ">
-                <img src="./img/portada07.png" alt="" class="d-block w-100" />
+          </div>
+          <div class="carousel-item" id="fondo" data-bs-interval="2000">
+            <img src="./img/portada05.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption centrar-texto-portada text-light  d-none d-md-block ">
+              <h3>titulo de 3</h3>
+              <p>Descripcion breve del  3 Some representative placeholder content for the first slide.</p>
             </div>
+          </div>
         </div>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     <!-- RIBBON  es un contenedor que va sobresalir de los demas-->
     <!-- container-fluid para que tenga todo el ancho -->
     <div id="ribbon" class="container-fluid">
@@ -65,7 +84,7 @@
             <!-- align-items-center : para que centre el contendo -->
             <div class="row align-items-center">
                 <!-- col-sm ≥576px max-width:540px -->
-                <div class="col-sm p3">
+                <div class="col-sm p3 w-75 mx-auto ">
                     <!-- w-75 el 75% de su tamaño asi sera responsivo -->
                     <!-- mx-auto es el margin en las x osea horizontal mente auto maring: 0 auto; -->
                     <img src="./img/svg/personaje.svg" class="d-block w-100  mx-auto" alt="personaje" />
