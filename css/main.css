@@ -90,3 +90,22 @@ top:40%;
 	background-color: rgba(0,0,0,0.75);
 }
 /* fin carrusel  */
+
+/* separador amiibos  */
+#separador-amiibos{
+    width: 100%;
+    /* para que se puede desbordar */
+    overflow: hidden;
+    /* permite colocarlo en un lugar espesifico pero dejando su estado deincio con su respectivo valoer de ancho y alto ose deja su espacio en blanco   */
+    position:relative;
+    z-index: 2;
+}
+#separador-amiibos .content{
+    background: url(../img/bg-03.png);
+    width: 110%;
+    height:100px;
+    margin-left: -5%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+/* fin separador amiibos     */
