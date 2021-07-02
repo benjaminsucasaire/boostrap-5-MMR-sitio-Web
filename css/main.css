@@ -100,12 +100,75 @@ top:40%;
     position:relative;
     z-index: 2;
 }
-#separador-amiibos .content{
+/* #separador-amiibos .content{
     background: url(../img/bg-03.png);
     width: 110%;
     height:100px;
     margin-left: -5%;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-}
+} */
 /* fin separador amiibos     */
+
+/*formulario de contactos*/
+.contactos{
+    padding-top: 80px;
+    background:url(../img/fondo-contactos-2.png)no-repeat;
+    background-size:100% 100%;
+     width: 100%;
+     height: 100vh;
+}
+.head{
+    background-color: rgb(185,19,185);
+    border-radius: 5px;
+    /* para que pase al lado superior, le dara un efecto */
+    margin-top: -40px;
+    /* esto lo saque de la pagina ya que ahi podemos acceder la las variables de box-shadow: ; https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
+    -moz-box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
+    box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
+}
+.caja-relativa{
+    position: relative;
+  }
+.effect-1{
+    /*Esta propiedad quita los bodes que estan por defecto*/
+    border:0;
+    /* Esto le quita el borde  cuando llenamos algo a la caja */
+    outline:none;
+    width: 100%;
+    padding:7px 0;
+    /* con esto pones el borde abajo */
+    border-bottom: 1px solid #ccc;
+}
+.effect-1 ~ .focus-border-1{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width: 0;
+    height:2px;
+    background-color:rgb(185,19,185);
+    transition: 0.4s;
+}
+.effect-1:focus ~ .focus-border-1{
+    width: 100%;
+    transition:0.4s;
+    left:0;
+}
+.btn-enviar{
+    background-color: rgb(185,19,185);
+    color:white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    /* height:40px;
+    width: 90%; */
+    padding:10px 15px;
+}
+.btn-enviar:hover{
+        /* esto lo saque de la pagina ya que ahi podemos acceder la las variables de box-shadow: ; https://www.cssmatic.com/box-shadow */
+        -webkit-box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
+        -moz-box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
+        box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
+}
+/*fin de formulario de contactos*/
