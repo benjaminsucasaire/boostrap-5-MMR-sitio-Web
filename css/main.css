@@ -61,12 +61,25 @@
 
 #servicios{
 background: rgb(255, 255, 255);
-background: url(../img/bg-04.png), linear-gradient(0deg, rgba(255, 255, 255, 1) 0%,rgba(8,149,224,1) 57%);
+background:  linear-gradient(0deg, rgba(255, 255, 255, 1) 0%,rgba(8,149,224,1) 57%);
 /* el fondo solo se repita en el eje x */
 background-repeat: repeat-x;
 background-size:16%;
 margin-top:-20px;
 }
+.boton-servicios{
+    background-color:rgb(255,175,0);
+    color:black;
+    border-color: white;
+    font-weight: 500;
+}
+.boton-servicios:hover{
+    background-color:rgb(236, 162, 2);
+    color:black;
+    border-color: white;
+    
+}
+
 /* carruserl */
 .centrar-texto-portada{
 bottom: 50%;
@@ -91,42 +104,28 @@ top:40%;
 }
 /* fin carrusel  */
 
-/* separador amiibos  */
-#separador-amiibos{
-    width: 100%;
-    /* para que se puede desbordar */
-    overflow: hidden;
-    /* permite colocarlo en un lugar espesifico pero dejando su estado deincio con su respectivo valoer de ancho y alto ose deja su espacio en blanco   */
-    position:relative;
-    z-index: 2;
-}
-/* #separador-amiibos .content{
-    background: url(../img/bg-03.png);
-    width: 110%;
-    height:100px;
-    margin-left: -5%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-} */
-/* fin separador amiibos     */
+
 
 /*formulario de contactos*/
 .contactos{
     padding-top: 80px;
+    padding-bottom: 80px;
     background:url(../img/fondo-contactos-2.png)no-repeat;
     background-size:100% 100%;
      width: 100%;
-     height: 100vh;
+     height: 110vh;
 }
 .head{
-    background-color: rgb(185,19,185);
+    /* background-color: rgb(185,19,185); */
+    background-color: rgb(255,175,0);
+
     border-radius: 5px;
     /* para que pase al lado superior, le dara un efecto */
     margin-top: -40px;
     /* esto lo saque de la pagina ya que ahi podemos acceder la las variables de box-shadow: ; https://www.cssmatic.com/box-shadow */
-    -webkit-box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
-    -moz-box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
-    box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
+    -webkit-box-shadow: -1px 9px 27px -12px rgba(255,175,0,1);
+    -moz-box-shadow: -1px 9px 27px -12px rgba(255,175,0,1);
+    box-shadow: -1px 9px 27px -12px rgba(255,175,0,1);
 }
 .caja-relativa{
     position: relative;
@@ -147,7 +146,7 @@ top:40%;
     left:50%;
     width: 0;
     height:2px;
-    background-color:rgb(185,19,185);
+    background-color:rgb(255,175,0);
     transition: 0.4s;
 }
 .effect-1:focus ~ .focus-border-1{
@@ -156,8 +155,8 @@ top:40%;
     left:0;
 }
 .btn-enviar{
-    background-color: rgb(185,19,185);
-    color:white;
+    background-color: rgb(255,175,0);
+    color:rgb(58, 58, 58);
     outline: none;
     border: none;
     border-radius: 5px;
@@ -167,8 +166,18 @@ top:40%;
 }
 .btn-enviar:hover{
         /* esto lo saque de la pagina ya que ahi podemos acceder la las variables de box-shadow: ; https://www.cssmatic.com/box-shadow */
-        -webkit-box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
-        -moz-box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
-        box-shadow: -1px 9px 27px -12px rgba(235,23,235,1);
+        -webkit-box-shadow: -1px 9px 27px -12px rgba(255,175,0,1);
+        -moz-box-shadow: -1px 9px 27px -12px rgba(255,175,0,1);
+        box-shadow: -1px 9px 27px -12px rgba(255,175,0,1);
 }
 /*fin de formulario de contactos*/
+
+/*Footer*/
+#footer a{
+text-decoration: none;
+cursor: pointer;
+transition: all 300ms;
+}
+#footer a:hover{
+color: darkgoldenrod !important;
+    }
