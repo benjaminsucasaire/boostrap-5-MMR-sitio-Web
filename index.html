@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- recien lo va crear  -->
     <link rel="stylesheet" href="./css/main.css">
+       <!-- EFECTO DE SCROLLSPY  -->
+    <!-- para crear este efecto agregamos una posicion relativa al body insertamos las clases al body data-bs-spy="scroll" data-bs-target="#menu"
+    el identificador al nav id="menu"
+    colocar la clase  nav-pills en la ul -->
+    <!-- y en el primer enlace a colocamos active; -->
+    <!-- tambien tenemos que agregar fixed-top al van para que se quede pegado en la pantall -->
     <!-- enlace para los iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
 
-<body>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#menu">
     <!-- NAVBAR -->
     <!-- para que tenga fondo negro u oscuro bg-dark -->
     <!-- navbar-expand-sm para que se expanda  -->
-    <nav class="navbar sticky-top navbar-expand-sm navbar-dark  " style="background-color:#00568C ;">
+    <nav id="menu"  class="navbar sticky-top navbar-expand-sm navbar-dark  " >
         <!-- container-fluid para que tenga todo el ancho -->
         <div class="container-fluid">
             <div>
@@ -31,9 +37,9 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-lg-flex justify-content-end text-center" id="navbarSupportedContent">
-                <ul class="navbar-nav me-4">
+                <ul class="navbar-nav me-4 nav-pills">
                     <!-- class="nav-link" es para que tenga un estilo de enlace -->
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contactos">Contactos</a></li>
@@ -44,7 +50,7 @@
     </nav>
 
     <!-- CARROUSEL -->
-    <div id="carouselExampleFade" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-dark carousel-fade " data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active " id="fondo" data-bs-interval="2000">
                 <img src="./img/portada01.png" class="d-block w-100" alt="...">
